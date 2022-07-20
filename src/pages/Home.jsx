@@ -1,11 +1,9 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React from 'react';
 
 function Home() {
   return (
     <div>
       <h1>Home</h1>
-      <Outlet />
     </div>
   );
 }
