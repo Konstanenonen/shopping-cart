@@ -5,6 +5,7 @@ function ShopCartBar({ itemsAmount }) {
   return (
     <div>
       <p>Items in shopping cart: {itemsAmount}</p>
+      <button type="button">CHECKOUT</button>
     </div>
   );
 }
