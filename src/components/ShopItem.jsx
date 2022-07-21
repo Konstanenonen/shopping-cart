@@ -1,7 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
-function ShopItem() {
-  return <h1>Shop item</h1>;
+function ShopItem({ title, description, addToCart }) {
+  const [amount, setAmount] = useState(0);
+  const amountInputId = 'item-amount';
+
+  const handleClick = () => {
+    addToCart(amount);
+  };
+
+  return (
+    <div>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <label htmlFor={amountInputId}>
+        Set amount:
+        <input
+          value={amount}
+          onChange={(e) => setAmount(Number(e.target.value))}
+          type="number"
+          id={amountInputId}
+        />
+      </label>
+      <button type="button" onClick={() => setAmount(amount + 1)}>
+        +1
+      </button>
+      <button type="button" onClick={() => setAmount(amount - 1)}>
+        -1
+      </button>
+      <button type="button" onClick={handleClick}>
+        Add to cart
+      </button>
+    </div>
+  );
 }
+
+ShopItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  addToCart: PropTypes.func.isRequired,
+};
 
 export default ShopItem;
