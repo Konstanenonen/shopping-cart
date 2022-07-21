@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import styles from '../styles/components/ShopItem.module.scss';
 
 function ShopItem({ title, description, addToCart }) {
   const [amount, setAmount] = useState(0);
@@ -10,8 +11,8 @@ function ShopItem({ title, description, addToCart }) {
   };
 
   return (
-    <div>
-      <h3>{title}</h3>
+    <div className={styles.container}>
+      <h3 className={styles.title}>{title}</h3>
       <p>{description}</p>
       <label htmlFor={amountInputId}>
         Set amount:
