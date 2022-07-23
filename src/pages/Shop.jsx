@@ -12,7 +12,6 @@ function Shop() {
   return (
     <>
       <ShopCartBar itemsAmount={itemsAmount} />
-      <h1>Shop</h1>
       <ShopItem
         title="Example Item"
         description="Interesting example description"
