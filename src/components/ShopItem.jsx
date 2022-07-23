@@ -8,6 +8,7 @@ function ShopItem({ title, description, addToCart }) {
 
   const handleClick = () => {
     addToCart(amount);
+    setAmount(0);
   };
 
   return (
