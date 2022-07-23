@@ -14,21 +14,23 @@ function ShopItem({ title, description, addToCart }) {
     <div className={styles.container}>
       <h3 className={styles.title}>{title}</h3>
       <p>{description}</p>
-      <label htmlFor={amountInputId}>
-        Set amount:
-        <input
-          value={amount}
-          onChange={(e) => setAmount(Number(e.target.value))}
-          type="number"
-          id={amountInputId}
-        />
-      </label>
-      <button type="button" onClick={() => setAmount(amount + 1)}>
-        +1
-      </button>
-      <button type="button" onClick={() => setAmount(amount - 1)}>
-        -1
-      </button>
+      <div className={styles.row}>
+        <button type="button" onClick={() => setAmount(amount - 1)}>
+          -1
+        </button>
+        <label className={styles.label} htmlFor={amountInputId}>
+          Add more to order:
+          <input
+            value={amount}
+            onChange={(e) => setAmount(Number(e.target.value))}
+            type="number"
+            id={amountInputId}
+          />
+        </label>
+        <button type="button" onClick={() => setAmount(amount + 1)}>
+          +1
+        </button>
+      </div>
       <button type="button" onClick={handleClick}>
         Add to cart
       </button>
