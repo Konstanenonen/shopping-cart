@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ShopCartBar from '../components/ShopCartBar';
 import ShopItem from '../components/ShopItem';
 import shopItems from '../data/shopItems';
+import styles from '../styles/pages/Shop.module.scss';
 
 function Shop() {
   const [itemsAmount, setItemsAmount] = useState(0);
@@ -13,6 +14,7 @@ function Shop() {
 
   const itemElements = items.map((item) => (
     <ShopItem
+      key={item.title}
       title={item.title}
       description={item.description}
       addToCart={addToCart}
@@ -22,7 +24,7 @@ function Shop() {
   return (
     <>
       <ShopCartBar itemsAmount={itemsAmount} />
-      <div>{itemElements}</div>
+      <div className={styles.container}>{itemElements}</div>
     </>
   );
 }
