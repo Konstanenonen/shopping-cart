@@ -10,7 +10,7 @@ function Shop() {
   };
 
   return (
-    <div>
+    <>
       <ShopCartBar itemsAmount={itemsAmount} />
       <h1>Shop</h1>
       <ShopItem
@@ -18,7 +18,7 @@ function Shop() {
         description="Interesting example description"
         addToCart={addToCart}
       />
-    </div>
+    </>
   );
 }
 

@@ -1,8 +1,7 @@
 @use '../variables.scss' as vars;
 
 .container {
-  display: flex;
-  flex-direction: column;
+  @include vars.flex-column;
   align-items: center;
   gap: 15px;
   padding: 10px;
@@ -14,8 +13,7 @@
 }
 
 .label {
-  display: flex;
-  flex-direction: column;
+  @include vars.flex-column;
 }
 
 .row {
