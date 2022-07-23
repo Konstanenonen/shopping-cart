@@ -6,3 +6,11 @@
   gap: 20px;
   padding: 10px;
 }
+
+.active {
+  color: vars.$color-red;
+}
+
+.notActive {
+  color: grey;
+}
