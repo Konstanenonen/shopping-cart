@@ -1,14 +1,26 @@
 /* eslint-disable react/jsx-filename-extension */
-/* global it describe expect */
+/* global it describe expect jest */
 
 import React from 'react';
-import { render } from '@testing-library/react';
-// import userEvent from '@testing-library/user-event';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import Button from '../../components/Button';
 
 describe('Button component', () => {
   it("renders text 'CLICK ME'", () => {
     const { container } = render(<Button>CLICK ME</Button>);
     expect(container).toMatchSnapshot();
+  });
+
+  it('calls handleClick correct amount of times', () => {
+    const handleClickMock = jest.fn();
+    render(<Button handleClick={handleClickMock}>CLICK ME</Button>);
+    const button = screen.getByRole('button', { name: 'CLICK ME' });
+
+    userEvent.click(button);
+    userEvent.click(button);
+    userEvent.click(button);
+
+    expect(handleClickMock).toBeCalledTimes(3);
   });
 });
