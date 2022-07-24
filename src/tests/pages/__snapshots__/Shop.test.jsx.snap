@@ -1,0 +1,474 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shop page Renders shop item data to ShopItem components 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <p>
+      Items in shopping cart: 
+      0
+    </p>
+    <button
+      class="button"
+      type="button"
+    >
+      CHECKOUT
+    </button>
+  </div>
+  <div
+    class="container"
+  >
+    <div
+      class="container"
+    >
+      <h3
+        class="title"
+      >
+        Item title1
+      </h3>
+      <p>
+        Item description
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="button"
+          type="button"
+        >
+          -1
+        </button>
+        <label
+          class="label"
+          for="item-amount"
+        >
+          Add more to order:
+          <input
+            id="item-amount"
+            type="number"
+            value="0"
+          />
+        </label>
+        <button
+          class="button"
+          type="button"
+        >
+          +1
+        </button>
+      </div>
+      <button
+        class="button"
+        type="button"
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      class="container"
+    >
+      <h3
+        class="title"
+      >
+        Item title2
+      </h3>
+      <p>
+        Item description
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="button"
+          type="button"
+        >
+          -1
+        </button>
+        <label
+          class="label"
+          for="item-amount"
+        >
+          Add more to order:
+          <input
+            id="item-amount"
+            type="number"
+            value="0"
+          />
+        </label>
+        <button
+          class="button"
+          type="button"
+        >
+          +1
+        </button>
+      </div>
+      <button
+        class="button"
+        type="button"
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      class="container"
+    >
+      <h3
+        class="title"
+      >
+        Item title3
+      </h3>
+      <p>
+        Item description
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="button"
+          type="button"
+        >
+          -1
+        </button>
+        <label
+          class="label"
+          for="item-amount"
+        >
+          Add more to order:
+          <input
+            id="item-amount"
+            type="number"
+            value="0"
+          />
+        </label>
+        <button
+          class="button"
+          type="button"
+        >
+          +1
+        </button>
+      </div>
+      <button
+        class="button"
+        type="button"
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      class="container"
+    >
+      <h3
+        class="title"
+      >
+        Item title4
+      </h3>
+      <p>
+        Item description
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="button"
+          type="button"
+        >
+          -1
+        </button>
+        <label
+          class="label"
+          for="item-amount"
+        >
+          Add more to order:
+          <input
+            id="item-amount"
+            type="number"
+            value="0"
+          />
+        </label>
+        <button
+          class="button"
+          type="button"
+        >
+          +1
+        </button>
+      </div>
+      <button
+        class="button"
+        type="button"
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      class="container"
+    >
+      <h3
+        class="title"
+      >
+        Item title5
+      </h3>
+      <p>
+        Item description
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="button"
+          type="button"
+        >
+          -1
+        </button>
+        <label
+          class="label"
+          for="item-amount"
+        >
+          Add more to order:
+          <input
+            id="item-amount"
+            type="number"
+            value="0"
+          />
+        </label>
+        <button
+          class="button"
+          type="button"
+        >
+          +1
+        </button>
+      </div>
+      <button
+        class="button"
+        type="button"
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      class="container"
+    >
+      <h3
+        class="title"
+      >
+        Item title6
+      </h3>
+      <p>
+        Item description
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="button"
+          type="button"
+        >
+          -1
+        </button>
+        <label
+          class="label"
+          for="item-amount"
+        >
+          Add more to order:
+          <input
+            id="item-amount"
+            type="number"
+            value="0"
+          />
+        </label>
+        <button
+          class="button"
+          type="button"
+        >
+          +1
+        </button>
+      </div>
+      <button
+        class="button"
+        type="button"
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      class="container"
+    >
+      <h3
+        class="title"
+      >
+        Item title7
+      </h3>
+      <p>
+        Item description
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="button"
+          type="button"
+        >
+          -1
+        </button>
+        <label
+          class="label"
+          for="item-amount"
+        >
+          Add more to order:
+          <input
+            id="item-amount"
+            type="number"
+            value="0"
+          />
+        </label>
+        <button
+          class="button"
+          type="button"
+        >
+          +1
+        </button>
+      </div>
+      <button
+        class="button"
+        type="button"
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      class="container"
+    >
+      <h3
+        class="title"
+      >
+        Item title8
+      </h3>
+      <p>
+        Item description
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="button"
+          type="button"
+        >
+          -1
+        </button>
+        <label
+          class="label"
+          for="item-amount"
+        >
+          Add more to order:
+          <input
+            id="item-amount"
+            type="number"
+            value="0"
+          />
+        </label>
+        <button
+          class="button"
+          type="button"
+        >
+          +1
+        </button>
+      </div>
+      <button
+        class="button"
+        type="button"
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      class="container"
+    >
+      <h3
+        class="title"
+      >
+        Item title9
+      </h3>
+      <p>
+        Item description
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="button"
+          type="button"
+        >
+          -1
+        </button>
+        <label
+          class="label"
+          for="item-amount"
+        >
+          Add more to order:
+          <input
+            id="item-amount"
+            type="number"
+            value="0"
+          />
+        </label>
+        <button
+          class="button"
+          type="button"
+        >
+          +1
+        </button>
+      </div>
+      <button
+        class="button"
+        type="button"
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      class="container"
+    >
+      <h3
+        class="title"
+      >
+        Item title10
+      </h3>
+      <p>
+        Item description
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="button"
+          type="button"
+        >
+          -1
+        </button>
+        <label
+          class="label"
+          for="item-amount"
+        >
+          Add more to order:
+          <input
+            id="item-amount"
+            type="number"
+            value="0"
+          />
+        </label>
+        <button
+          class="button"
+          type="button"
+        >
+          +1
+        </button>
+      </div>
+      <button
+        class="button"
+        type="button"
+      >
+        Add to cart
+      </button>
+    </div>
+  </div>
+</div>
+`;
