@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 /* global it describe expect jest */
 
 import React from 'react';
