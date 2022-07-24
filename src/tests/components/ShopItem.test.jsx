@@ -3,6 +3,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { act } from 'react-dom/test-utils';
 import ShopItem from '../../components/ShopItem';
 
 describe('ShopItem component', () => {
@@ -24,9 +25,11 @@ describe('ShopItem component', () => {
     );
     const button = screen.getByRole('button', { name: 'Add to cart' });
 
-    userEvent.click(button);
-    userEvent.click(button);
-    userEvent.click(button);
+    act(() => {
+      userEvent.click(button);
+      userEvent.click(button);
+      userEvent.click(button);
+    });
 
     expect(addToCartMock).toBeCalledTimes(3);
   });
@@ -35,14 +38,14 @@ describe('ShopItem component', () => {
     render(
       <ShopItem title="TITLE" description="DESCRIPTION" addToCart={() => {}} />
     );
-
     const button = screen.getByRole('button', { name: '+1' });
-
-    userEvent.click(button);
-    userEvent.click(button);
-    userEvent.click(button);
-
     const input = screen.getByRole('spinbutton');
+
+    act(() => {
+      userEvent.click(button);
+      userEvent.click(button);
+      userEvent.click(button);
+    });
 
     expect(Number(input.value)).toBe(3);
   });
@@ -51,14 +54,14 @@ describe('ShopItem component', () => {
     render(
       <ShopItem title="TITLE" description="DESCRIPTION" addToCart={() => {}} />
     );
-
     const button = screen.getByRole('button', { name: '-1' });
-
-    userEvent.click(button);
-    userEvent.click(button);
-    userEvent.click(button);
-
     const input = screen.getByRole('spinbutton');
+
+    act(() => {
+      userEvent.click(button);
+      userEvent.click(button);
+      userEvent.click(button);
+    });
 
     expect(Number(input.value)).toBe(-3);
   });

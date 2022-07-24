@@ -17,7 +17,7 @@ function ShopItem({ title, description, addToCart }) {
       <h3 className={styles.title}>{title}</h3>
       <p>{description}</p>
       <div className={styles.row}>
-        <Button handleClick={() => setAmount(amount - 1)}>-1</Button>
+        <Button handleClick={() => setAmount((a) => a - 1)}>-1</Button>
         <label className={styles.label} htmlFor={amountInputId}>
           Add more to order:
           <input
@@ -27,7 +27,7 @@ function ShopItem({ title, description, addToCart }) {
             id={amountInputId}
           />
         </label>
-        <Button handleClick={() => setAmount(amount + 1)}>+1</Button>
+        <Button handleClick={() => setAmount((a) => a + 1)}>+1</Button>
       </div>
       <Button handleClick={handleClick}>Add to cart</Button>
     </div>
