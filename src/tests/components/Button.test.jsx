@@ -3,6 +3,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { act } from 'react-dom/test-utils';
 import Button from '../../components/Button';
 
 describe('Button component', () => {
@@ -16,9 +17,11 @@ describe('Button component', () => {
     render(<Button handleClick={handleClickMock}>CLICK ME</Button>);
     const button = screen.getByRole('button', { name: 'CLICK ME' });
 
-    userEvent.click(button);
-    userEvent.click(button);
-    userEvent.click(button);
+    act(() => {
+      userEvent.click(button);
+      userEvent.click(button);
+      userEvent.click(button);
+    });
 
     expect(handleClickMock).toBeCalledTimes(3);
   });
