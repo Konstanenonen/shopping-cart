@@ -1,9 +1,8 @@
 /* global it describe expect jest */
 
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, act } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { act } from 'react-dom/test-utils';
 import ShopItem from '../../components/ShopItem';
 
 describe('ShopItem component', () => {
