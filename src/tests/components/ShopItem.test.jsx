@@ -30,4 +30,36 @@ describe('ShopItem component', () => {
 
     expect(addToCartMock).toBeCalledTimes(3);
   });
+
+  it('+1 button adds 1 to input field after every click', () => {
+    render(
+      <ShopItem title="TITLE" description="DESCRIPTION" addToCart={() => {}} />
+    );
+
+    const button = screen.getByRole('button', { name: '+1' });
+
+    userEvent.click(button);
+    userEvent.click(button);
+    userEvent.click(button);
+
+    const input = screen.getByRole('spinbutton');
+
+    expect(Number(input.value)).toBe(3);
+  });
+
+  it('-1 button removes 1 to input field after every click', () => {
+    render(
+      <ShopItem title="TITLE" description="DESCRIPTION" addToCart={() => {}} />
+    );
+
+    const button = screen.getByRole('button', { name: '-1' });
+
+    userEvent.click(button);
+    userEvent.click(button);
+    userEvent.click(button);
+
+    const input = screen.getByRole('spinbutton');
+
+    expect(Number(input.value)).toBe(-3);
+  });
 });
