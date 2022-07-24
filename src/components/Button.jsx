@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../styles/components/Button.module.scss';
 
 function Button({ children, handleClick }) {
   return (
-    <button onClick={handleClick} type="button">
+    <button className={styles.button} onClick={handleClick} type="button">
       {children}
     </button>
   );
