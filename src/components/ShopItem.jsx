@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from '../styles/components/ShopItem.module.scss';
+import Button from './Button';
 
 function ShopItem({ title, description, addToCart }) {
   const [amount, setAmount] = useState(0);
@@ -16,9 +17,7 @@ function ShopItem({ title, description, addToCart }) {
       <h3 className={styles.title}>{title}</h3>
       <p>{description}</p>
       <div className={styles.row}>
-        <button type="button" onClick={() => setAmount(amount - 1)}>
-          -1
-        </button>
+        <Button handleClick={() => setAmount(amount - 1)}>-1</Button>
         <label className={styles.label} htmlFor={amountInputId}>
           Add more to order:
           <input
@@ -28,13 +27,9 @@ function ShopItem({ title, description, addToCart }) {
             id={amountInputId}
           />
         </label>
-        <button type="button" onClick={() => setAmount(amount + 1)}>
-          +1
-        </button>
+        <Button handleClick={() => setAmount(amount + 1)}>+1</Button>
       </div>
-      <button type="button" onClick={handleClick}>
-        Add to cart
-      </button>
+      <Button handleClick={handleClick}>Add to cart</Button>
     </div>
   );
 }

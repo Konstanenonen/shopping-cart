@@ -9,9 +9,13 @@ function Button({ children, handleClick }) {
   );
 }
 
+Button.defaultProps = {
+  handleClick: null,
+};
+
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  handleClick: PropTypes.func.isRequired,
+  handleClick: PropTypes.func,
 };
 
 export default Button;
