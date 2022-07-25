@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 10px;
+  padding: 30px;
   background-color: vars.$color-red;
+  box-shadow: vars.$color-lavender 0px 3px 8px;
 }
 
 .active {

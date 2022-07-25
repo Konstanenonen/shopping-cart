@@ -1,6 +1,14 @@
 @use '../variables.scss' as vars;
 
 .container {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
+  border: vars.$color-lavender 1px solid;
+  border-radius: 5px;
+  box-shadow: vars.$color-lavender 0px 3px 8px;
+
+  p {
+    color: vars.$color-darkblue;
+  }
 }
