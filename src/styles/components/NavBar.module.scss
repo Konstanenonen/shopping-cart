@@ -3,10 +3,11 @@
 .container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
   padding: 30px;
   background-color: vars.$color-red;
   box-shadow: vars.$color-lavender 0px 3px 8px;
+  font-size: 1.3rem;
 }
 
 .active {
@@ -15,4 +16,5 @@
 
 .notActive {
   color: vars.$color-blue;
+  text-decoration: none;
 }
