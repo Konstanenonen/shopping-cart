@@ -10,7 +10,9 @@ exports[`ShopItem component renders "TITLE" and "DESCRIPTION" 1`] = `
     >
       TITLE
     </h3>
-    <p>
+    <p
+      class="text"
+    >
       DESCRIPTION
     </p>
     <div

@@ -27,7 +27,9 @@ exports[`Shop page Renders shop item data to ShopItem components 1`] = `
       >
         Item title1
       </h3>
-      <p>
+      <p
+        class="text"
+      >
         Item description
       </p>
       <div
@@ -72,7 +74,9 @@ exports[`Shop page Renders shop item data to ShopItem components 1`] = `
       >
         Item title2
       </h3>
-      <p>
+      <p
+        class="text"
+      >
         Item description
       </p>
       <div
@@ -117,7 +121,9 @@ exports[`Shop page Renders shop item data to ShopItem components 1`] = `
       >
         Item title3
       </h3>
-      <p>
+      <p
+        class="text"
+      >
         Item description
       </p>
       <div
@@ -162,7 +168,9 @@ exports[`Shop page Renders shop item data to ShopItem components 1`] = `
       >
         Item title4
       </h3>
-      <p>
+      <p
+        class="text"
+      >
         Item description
       </p>
       <div
@@ -207,7 +215,9 @@ exports[`Shop page Renders shop item data to ShopItem components 1`] = `
       >
         Item title5
       </h3>
-      <p>
+      <p
+        class="text"
+      >
         Item description
       </p>
       <div
@@ -252,7 +262,9 @@ exports[`Shop page Renders shop item data to ShopItem components 1`] = `
       >
         Item title6
       </h3>
-      <p>
+      <p
+        class="text"
+      >
         Item description
       </p>
       <div
@@ -297,7 +309,9 @@ exports[`Shop page Renders shop item data to ShopItem components 1`] = `
       >
         Item title7
       </h3>
-      <p>
+      <p
+        class="text"
+      >
         Item description
       </p>
       <div
@@ -342,7 +356,9 @@ exports[`Shop page Renders shop item data to ShopItem components 1`] = `
       >
         Item title8
       </h3>
-      <p>
+      <p
+        class="text"
+      >
         Item description
       </p>
       <div
@@ -387,7 +403,9 @@ exports[`Shop page Renders shop item data to ShopItem components 1`] = `
       >
         Item title9
       </h3>
-      <p>
+      <p
+        class="text"
+      >
         Item description
       </p>
       <div
@@ -432,7 +450,9 @@ exports[`Shop page Renders shop item data to ShopItem components 1`] = `
       >
         Item title10
       </h3>
-      <p>
+      <p
+        class="text"
+      >
         Item description
       </p>
       <div

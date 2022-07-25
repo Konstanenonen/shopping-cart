@@ -15,7 +15,7 @@ function ShopItem({ title, description, addToCart }) {
   return (
     <div className={styles.container}>
       <h3 className={styles.title}>{title}</h3>
-      <p>{description}</p>
+      <p className={styles.text}>{description}</p>
       <div className={styles.row}>
         <Button handleClick={() => setAmount((a) => a - 1)}>-1</Button>
         <label className={styles.label} htmlFor={amountInputId}>

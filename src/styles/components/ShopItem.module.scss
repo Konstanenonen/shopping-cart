@@ -3,23 +3,34 @@
 .container {
   @include vars.flex-column;
   align-items: center;
-  gap: 15px;
-  padding: 10px;
-  border: 1px solid black;
+  gap: 40px;
+  padding: 30px;
   width: 300px;
+  background-color: vars.$color-red;
+  border-radius: 5px;
+  box-shadow: vars.$color-lavender 0px 3px 8px;
+  border: 1px solid vars.$color-lavender;
 }
 
 .title {
   font-size: 1.5rem;
+  color: vars.$color-darkblue;
+}
+
+.text {
+  color: vars.$color-darkblue;
+  font-size: 1.2rem;
 }
 
 .label {
   @include vars.flex-column;
   gap: 5px;
+  width: 110px;
 }
 
 .row {
   display: flex;
   align-items: flex-end;
   gap: 10px;
+  color: vars.$color-darkblue;
 }
