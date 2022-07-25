@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoMatch page renders "Ooops! There is nothing here." 1`] = `
+<div>
+  <h1>
+    Ooops! There is nothing here.
+  </h1>
+</div>
+`;
