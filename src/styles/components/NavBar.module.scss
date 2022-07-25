@@ -5,12 +5,13 @@
   justify-content: center;
   gap: 20px;
   padding: 10px;
+  background-color: vars.$color-red;
 }
 
 .active {
-  color: vars.$color-red;
+  color: vars.$color-darkblue;
 }
 
 .notActive {
-  color: grey;
+  color: vars.$color-blue;
 }
