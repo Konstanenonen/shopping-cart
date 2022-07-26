@@ -1,4 +1,4 @@
-/* global it describe expect2 */
+/* global it describe expect */
 
 import React from 'react';
 import { render } from '@testing-library/react';
