@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page renders information about learning goals and link to GitHub profile 1`] = `
+<div>
+  <h1
+    class="title"
+  >
+    Home page
+  </h1>
+  <p
+    class="text"
+  >
+    This project was made to learn
+     
+    <span
+      class="red"
+    >
+      React testing library
+    </span>
+     and
+     
+    <span
+      class="red"
+    >
+      React Router library
+    </span>
+  </p>
+  <p
+    class="text"
+  >
+    Checkout my other projects from my
+     
+    <a
+      href="https://github.com/Konstanenonen"
+    >
+      GitHub profile
+    </a>
+  </p>
+</div>
+`;

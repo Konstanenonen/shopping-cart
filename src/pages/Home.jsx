@@ -10,6 +10,10 @@ function Home() {
         <span className={styles.red}>React testing library</span> and{' '}
         <span className={styles.red}>React Router library</span>
       </p>
+      <p className={styles.text}>
+        Checkout my other projects from my{' '}
+        <a href="https://github.com/Konstanenonen">GitHub profile</a>
+      </p>
     </>
   );
 }
